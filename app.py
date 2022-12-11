@@ -54,6 +54,7 @@ def crod_p(id=-1):
         the_put_person=Persons.query.get(id)
         db.session.delete(the_put_person)
         db.session.commit()
+        return {}
 
 
 
